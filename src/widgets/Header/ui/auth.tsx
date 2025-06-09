@@ -20,7 +20,7 @@ export const Auth = () => {
                 </Link>
                 <ModeToggle />
             </div>
-            <Link href='/'><RippleButton rippleColor="#ADD8E6" className='w-full xl:w-auto 2xl:text-xl 2xl:py-[30px] 2xl:px-8'>Связаться</RippleButton></Link>
+            <Link href='/'><RippleButton rippleColor="white" className='w-full xl:w-auto 2xl:text-xl 2xl:py-[30px] 2xl:px-8'>Связаться</RippleButton></Link>
             {/* <Button variant='outline' className='w-full xl:w-auto 2xl:text-xl 2xl:py-[30px] 2xl:px-8'><Link href='/'>Связаться</Link></Button> */}
         </div>
     )

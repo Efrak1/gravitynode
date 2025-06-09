@@ -35,7 +35,7 @@ const DefaultCursorSVG: FC = () => {
         />
         <path
           d="M43.7146 40.6933L28.5431 6.34306C27.3556 3.65428 23.5772 3.69516 22.3668 6.32755L6.57226 40.6778C5.3134 43.4156 7.97238 46.298 10.803 45.2549L24.7662 40.109C25.0221 40.0147 25.2999 40.0156 25.5494 40.1082L39.4193 45.254C42.2261 46.2953 44.9254 43.4347 43.7146 40.6933Z"
-          stroke="white"
+          stroke="#C084FC"
           strokeWidth={2.25825}
         />
       </g>
@@ -61,7 +61,7 @@ const DefaultCursorSVG: FC = () => {
           <feComposite in2="hardAlpha" operator="out" />
           <feColorMatrix
             type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+            values="0 0 0 0 0.752941 0 0 0 0 0.517647 0 0 0 0 0.988235 0 0 0 0.5 0"
           />
           <feBlend
             mode="normal"
@@ -74,6 +74,10 @@ const DefaultCursorSVG: FC = () => {
             in2="effect1_dropShadow_91_7928"
             result="shape"
           />
+        </filter>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="overlay" />
         </filter>
       </defs>
     </svg>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Ripple } from "@/components/magicui/ripple";
+import { Ripple } from "@/shared/ui/magicui/ripple";
 import { Button } from "@/shared/ui/button";
 import {
   Card,
