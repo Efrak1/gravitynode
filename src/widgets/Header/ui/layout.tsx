@@ -20,11 +20,16 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ logo, nav, auth }) => {
   return (
     <header className='fixed top-10 left-0 right-0 z-50'>
-      {/* Мобильная версия */}
-      <div className="xl:hidden flex flex-row justify-center gap-36 items-center p-2 rounded-full backdrop-blur-[5px]">
+      <div className='flex flex-row gap-36 xl:gap-[50px] justify-center items-center w-full p-2 rounded-full backdrop-blur-[7px]'>
         <Link href='/'> {logo} </Link>
+
+        <div className='hidden xl:flex flex-row justify-center items-center gap-20'>
+          <div>{nav}</div>
+          <div>{auth}</div>
+        </div>
+
         <Sheet>
-          <SheetTrigger asChild>
+          <SheetTrigger asChild className='xl:hidden'>
             <BiMenuAltRight className='w-7 h-7' />
           </SheetTrigger>
           <SheetContent>
@@ -39,15 +44,6 @@ export const Layout: React.FC<LayoutProps> = ({ logo, nav, auth }) => {
             </SheetFooter>
           </SheetContent>
         </Sheet>
-      </div>
-
-      {/* Десктопная версия */}
-      <div className='xl:flex flex-row hidden xl:gap-[50px] justify-center items-center w-full p-2 rounded-full backdrop-blur-[7px]'>
-        <Link href='/'>{logo}</Link>
-        <div className='flex flex-row justify-center items-center gap-20'>
-          <div>{nav}</div>
-          <div>{auth}</div>
-        </div>
       </div>
     </header>
   );
