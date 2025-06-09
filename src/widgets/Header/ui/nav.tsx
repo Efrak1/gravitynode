@@ -10,7 +10,6 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/shared/ui/dropdown-menu"
-import { Button } from "@/shared/ui/button"
 import { RippleButton } from '@/shared/ui/magicui/ripple-button'
 
 export const Nav = () => {

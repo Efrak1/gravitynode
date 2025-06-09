@@ -1,5 +1,4 @@
 "use client"
-import { Button } from '@/shared/ui/button'
 import { RippleButton } from '@/shared/ui/magicui/ripple-button'
 import { ShimmerButton } from '@/shared/ui/magicui/shimmer-button'
 import { ModeToggle } from '@/shared/ui/ModeToggle'
