@@ -38,9 +38,9 @@ export const Blog = () => {
             </div>
             <ul className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pointer-events-none z-10'>
                 {block.map((p) => (
-                    <li key={`${p.title}-${p.text}`} className='flex flex-col justify-center items-center gap-3 p-5 w-[330px] h-[130px] 2xl:w-[500px] 2xl:h-[250px] border-[1px] rounded-xl'>
-                        <TextAnimate animation="blurIn" as="h1" className='text-2xl 2xl:text-[50px] font-semibold'>{p.title}</TextAnimate>
-                        <TextAnimate animation="blurInUp" by="character" once className='text-xl 2xl:text-3xl'>{p.text}</TextAnimate>
+                    <li key={`${p.title}-${p.text}`} className='flex flex-col justify-center items-center gap-3 p-5 w-[330px] h-[130px] 2xl:w-[500px] 2xl:h-[250px] border-[1px] rounded-xl bg-[#252a42] opacity-70'>
+                        <TextAnimate animation="blurIn" as="h1" className='text-2xl 2xl:text-[50px] font-semibold text-blue-100'>{p.title}</TextAnimate>
+                        <TextAnimate animation="blurInUp" by="character" once className='text-xl 2xl:text-3xl text-blue-200'>{p.text}</TextAnimate>
                     </li>
                 ))}
             </ul>

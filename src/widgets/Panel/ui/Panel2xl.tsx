@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { cn } from "@/shared/lib/utils";
 import { Marquee } from "@/shared/ui/magicui/marquee";
 // import Image from "next/image";
 import { reviews } from "./reviwes";
-import { Meteors } from "@/shared/ui/magicui/meteors";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
@@ -22,7 +20,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-fit sm:w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -43,21 +41,21 @@ const ReviewCard = ({
   );
 };
 
-export function PanelMobile() {
+export function Panel2xl() {
   return (
-    <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover vertical className="[--duration:20s]">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+      <Marquee pauseOnHover className="[--duration:20s] transform: translateX(calc(-100% - var(--gap)));">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover vertical className="[--duration:20s]">
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
     </div>
   );
 }

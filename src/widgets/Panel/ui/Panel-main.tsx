@@ -1,12 +1,12 @@
 import React from 'react'
-import { PanelDesctop } from './PanelDesctop'
 import { PanelMobile } from './PanelMobile'
+import { Panel2xl } from './Panel2xl'
 
 export const PanelMain = () => {
     return (
         <section>
             <div className='sm:flex hidden'>
-                <PanelDesctop />
+                <Panel2xl />
             </div>
             <div className='flex sm:hidden'>
                 <PanelMobile />

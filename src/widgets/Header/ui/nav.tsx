@@ -82,9 +82,9 @@ export const Nav = () => {
         <nav className='flex xl:flex-row flex-col gap-6'>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <RippleButton rippleColor="#5b5cf0" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Решения</RippleButton>
+                    <RippleButton rippleColor="#ADD8E6" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Решения</RippleButton>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="relative left-0 top-full mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
+                <DropdownMenuContent className="mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
                     <div className="flex flex-col w-1/3 min-w-[200px] bg-[#23243a] border-r border-[#35365a] py-4">
                         {categories.map((cat, i) => (
                             <button
@@ -129,7 +129,7 @@ export const Nav = () => {
                 <DropdownMenuTrigger asChild>
                     <RippleButton rippleColor="#5b5cf0" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Сервисы</RippleButton>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="relative left-0 top-full mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
+                <DropdownMenuContent className="mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
                     {/* Левая колонка — категории */}
                     <div className="flex flex-col w-1/3 min-w-[200px] bg-[#23243a] border-r border-[#35365a] py-4">
                         {categories1.map((cat, i) => (
