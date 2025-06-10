@@ -5,7 +5,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 import {
   Sheet,
   SheetContent,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,

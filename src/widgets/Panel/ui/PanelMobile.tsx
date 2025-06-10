@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { cn } from "@/shared/lib/utils";
 import { Marquee } from "@/shared/ui/magicui/marquee";
 // import Image from "next/image";
 import { reviews } from "./reviwes";
-import { Meteors } from "@/shared/ui/magicui/meteors";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);

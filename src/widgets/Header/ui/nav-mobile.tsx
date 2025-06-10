@@ -5,7 +5,6 @@ import {
   AccordionTrigger,
 } from "@/shared/ui/accordion"
 import Link from "next/link"
-import { RippleButton } from '@/shared/ui/magicui/ripple-button'
 
 // Определение типов
 interface NavItem {
