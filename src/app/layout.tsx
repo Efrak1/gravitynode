@@ -4,7 +4,7 @@ import "./globals.css";
 import { Footer } from "@/widgets/Footer/Footer";
 import { ThemeProvider } from "@/shared/ui/theme-provider";
 import { AppHeader } from "@/widgets/Header/app-header";
-import { SmoothCursor } from "@/shared/ui/magicui/smooth-cursor";
+// import { SmoothCursor } from "@/shared/ui/magicui/smooth-cursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +37,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SmoothCursor />
+          {/* <SmoothCursor /> */}
           <AppHeader />
           <main className="p-5">{children}</main>
           <Footer />

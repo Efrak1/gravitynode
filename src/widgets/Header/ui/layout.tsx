@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { BiMenuAltRight } from "react-icons/bi";
 import {
@@ -10,6 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/shared/ui/sheet'
+import { useScrollbar } from '@/shared/hooks/useScroolbar';
 
 interface LayoutProps {
   logo: React.ReactNode;
@@ -18,12 +19,20 @@ interface LayoutProps {
 }
 
 export const Layout: React.FC<LayoutProps> = ({ logo, nav, auth }) => {
+  const scrollbarWidth = useScrollbar();
+  
+  useEffect(() => {
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+    return () => {
+      document.body.style.paddingRight = '';
+    };
+  }, [scrollbarWidth]);
   return (
     <header className='fixed top-10 left-0 right-0 z-50'>
       <div className='flex flex-row gap-36 xl:gap-[50px] justify-center items-center w-full p-2 rounded-full backdrop-blur-[7px]'>
         <Link href='/'> {logo} </Link>
 
-        <div className='hidden xl:flex flex-row justify-center items-center gap-20'>
+        <div className='hidden xl:flex xl:max-w-[1300px] flex-row justify-center items-center gap-20'>
           <div>{nav}</div>
           <div>{auth}</div>
         </div>
