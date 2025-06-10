@@ -53,10 +53,8 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
-
-    --scrollbar-width: 17px;
-  ;
+    --radius: 0.5rem --scrollbar-width: 17px;
+    ;
 
     --color-1: oklch(66.2% 0.225 25.9);
 
@@ -66,7 +64,9 @@
 
     --color-4: oklch(80.2% 0.134 225);
 
-    --color-5: oklch(90.7% 0.231 133)}
+    --color-5: oklch(90.7% 0.231 133)
+  }
+
   .dark {
 
     --background: #0d102b;
@@ -115,8 +115,7 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
-  ;
+    --chart-5: 340 75% 55%;
 
     --color-1: oklch(66.2% 0.225 25.9);
 
@@ -126,7 +125,9 @@
 
     --color-4: oklch(80.2% 0.134 225);
 
-    --color-5: oklch(90.7% 0.231 133)}
+    --color-5: oklch(90.7% 0.231 133)
+  }
+
   .theme {
 
     --animate-rippling: rippling var(--duration) ease-out;
@@ -141,11 +142,12 @@
 
     --animate-shine: shine var(--duration) infinite linear;
 
-    --animate-ripple: ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite;
+    --animate-ripple: ripple var(--duration, 2s) ease calc(var(--i, 0)*.2s) infinite;
 
     --animate-marquee: marquee var(--duration) infinite linear;
 
-    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite}
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite
+  }
 }
 
 @layer base {
@@ -158,110 +160,139 @@
     overflow-y: scroll;
     scrollbar-gutter: stable;
     padding-right: var(--scrollbar-width);
-    
   }
 }
 
 @theme inline {
   @keyframes rippling {
-  0% {
-    opacity: 1;
+    0% {
+      opacity: 1;
     }
-  100% {
-    transform: scale(2);
-    opacity: 0;
+
+    100% {
+      transform: scale(2);
+      opacity: 0;
     }
   }
+
   @keyframes rainbow {
-  0% {
-    background-position: 0%;
+    0% {
+      background-position: 0%;
     }
-  100% {
-    background-position: 200%;
+
+    100% {
+      background-position: 200%;
     }
   }
+
   @keyframes shimmer-slide {
-  to {
-    transform: translate(calc(100cqw - 100%), 0);
+    to {
+      transform: translate(calc(100cqw - 100%), 0);
     }
   }
+
   @keyframes spin-around {
-  0% {
-    transform: translateZ(0) rotate(0);
+    0% {
+      transform: translateZ(0) rotate(0);
     }
-  15%, 35% {
-    transform: translateZ(0) rotate(90deg);
+
+    15%,
+    35% {
+      transform: translateZ(0) rotate(90deg);
     }
-  65%, 85% {
-    transform: translateZ(0) rotate(270deg);
+
+    65%,
+    85% {
+      transform: translateZ(0) rotate(270deg);
     }
-  100% {
-    transform: translateZ(0) rotate(360deg);
+
+    100% {
+      transform: translateZ(0) rotate(360deg);
     }
   }
+
   @keyframes meteor {
-  0% {
-    transform: rotate(var(--angle)) translateX(0);
-    opacity: 1;
+    0% {
+      transform: rotate(var(--angle)) translateX(0);
+      opacity: 1;
     }
-  70% {
-    opacity: 1;
+
+    70% {
+      opacity: 1;
     }
-  100% {
-    transform: rotate(var(--angle)) translateX(-500px);
-    opacity: 0;
+
+    100% {
+      transform: rotate(var(--angle)) translateX(-500px);
+      opacity: 0;
     }
   }
+
   @keyframes shine {
-  0% {
-    background-position: 0% 0%;
+    0% {
+      background-position: 0% 0%;
     }
-  50% {
-    background-position: 100% 100%;
+
+    50% {
+      background-position: 100% 100%;
     }
-  to {
-    background-position: 0% 0%;
+
+    to {
+      background-position: 0% 0%;
     }
   }
+
   @keyframes rippling {
-  0% {
-    opacity: 1;
+    0% {
+      opacity: 1;
     }
-  100% {
-    transform: scale(2);
-    opacity: 0;
+
+    100% {
+      transform: scale(2);
+      opacity: 0;
     }
   }
+
   @keyframes ripple {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
+
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
     }
-  50% {
-    transform: translate(-50%, -50%) scale(0.9);
+
+    50% {
+      transform: translate(-50%, -50%) scale(0.9);
     }
   }
+
   @keyframes ripple {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
+
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
     }
-  50% {
-    transform: translate(-50%, -50%) scale(0.9);
+
+    50% {
+      transform: translate(-50%, -50%) scale(0.9);
     }
   }
+
   @keyframes marquee {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }
+
   @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
+    from {
+      transform: translateY(0);
     }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
+
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
     }
   }
 }

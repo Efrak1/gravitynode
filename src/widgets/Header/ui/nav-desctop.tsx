@@ -82,7 +82,7 @@ export const Nav = () => {
         <nav className='flex xl:flex-row flex-col gap-6'>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <RippleButton rippleColor="#ADD8E6" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Решения</RippleButton>
+                    <RippleButton rippleColor="#ADD8E6" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Сервисы</RippleButton>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
                     <div className="flex flex-col w-1/3 min-w-[200px] bg-[#23243a] border-r border-[#35365a] py-4">
@@ -127,7 +127,7 @@ export const Nav = () => {
 
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <RippleButton rippleColor="#5b5cf0" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Сервисы</RippleButton>
+                    <RippleButton rippleColor="#5b5cf0" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8 font-semibold">Решения</RippleButton>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="mt-2 w-[900px] h-[600px] p-0 rounded-2xl overflow-hidden shadow-2xl border bg-[#23243a] text-white z-50 flex" align="start">
                     {/* Левая колонка — категории */}
@@ -227,9 +227,6 @@ export const Nav = () => {
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <RippleButton rippleColor="#ADD8E6" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8">Roadmap</RippleButton>
-                    {/* <Button variant="outline" className="text-base py-2 px-4 h-auto 2xl:text-xl 2xl:py-4 2xl:px-8">
-                        Roadmap
-                    </Button> */}
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56 2xl:w-[42rem] 2xl:text-xl 2xl:p-6" align="start">
                     <DropdownMenuLabel className="2xl:text-3xl 2xl:p-3">
