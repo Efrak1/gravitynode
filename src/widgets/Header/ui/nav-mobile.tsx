@@ -1,3 +1,4 @@
+'use client'
 import {
   Accordion,
   AccordionContent,
@@ -5,126 +6,112 @@ import {
   AccordionTrigger,
 } from "@/shared/ui/accordion"
 import Link from "next/link"
+import { Service, Decisions } from './nav-const'
 
-// Определение типов
-interface NavItem {
-  icon?: string;
-  title: string;
-  href: string;
-  desc?: string;
+type NavSection = {
+  label: string;
+  items: {
+    icon?: string;
+    title: string;
+    href: string;
+  }[];
 }
-
-interface AllLink {
-  href: string;
-  text: string;
-}
-
-interface NavSection {
-  title: string;
-  items: NavItem[];
-  allLink?: AllLink;
-}
-
-const navItems: NavSection[] = [
-  {
-    title: "Сервисы",
-    items: [
-      { icon: '🖥️', title: 'Выделенные серверы', href: '/dedicated' },
-      { icon: '☁️', title: 'Облачные серверы', href: '/cloud' },
-      { icon: '🗄️', title: 'Публичное облако VMware', href: '/vmware' },
-      { icon: '🎮', title: 'Серверы с GPU', href: '/gpu' },
-      { icon: '📦', title: 'VDS и VPS на Linux', href: '/vds-linux' },
-      { icon: '🐧', title: 'VDS и VPS с Ubuntu', href: '/vds-ubuntu' },
-    ],
-    allLink: { href: "/solutions", text: "Все решения" }
-  },
-  {
-    title: "Решения",
-    items: [
-      { icon: '🖥️', title: 'Серверы 152-ФЗ', href: '/' },
-      { icon: '☁️', title: 'Облако 1С', href: '/' },
-      { icon: '🗄️', title: 'Корпоративная почта', href: '/' },
-      { icon: '🎮', title: 'DevOps as a Service', href: '/' },
-      { icon: '📦', title: 'Выделенные серверы 1С', href: '/' },
-      { icon: '🐧', title: 'Миграция в облако', href: '/' },
-    ],
-    allLink: { href: "/services", text: "Все сервисы" }
-  },
-  {
-    title: "Документация",
-    items: [
-      { title: 'API документация', href: '/docs/api' },
-      { title: 'Руководства', href: '/docs/guides' },
-      { title: 'Частые вопросы', href: '/docs/faq' },
-    ]
-  },
-  {
-    title: "Блоги",
-    items: [
-      { title: 'Технические статьи', href: '/blog/tech' },
-      { title: 'Кейсы', href: '/blog/cases' },
-      { title: 'Новости', href: '/blog/news' },
-    ]
-  },
-  {
-    title: "Roadmap",
-    items: [
-      { title: 'Планы развития', href: '/roadmap' },
-      { title: 'Обновления', href: '/roadmap/updates' },
-      { title: 'Голосования', href: '/roadmap/votes' },
-    ]
-  },
-  {
-    title: "Контакты",
-    items: [
-      { title: 'Поддержка', href: '/support' },
-      { title: 'Офисы', href: '/offices' },
-      { title: 'Партнерство', href: '/partners' },
-    ]
-  }
-]
 
 export function NavMobile() {
+  // Собираем все разделы
+  const allSections = [
+    { title: 'Сервисы', sections: Service },
+    { title: 'Решения', sections: Decisions },
+    { 
+      title: 'Документация', 
+      sections: [
+        { 
+          label: 'Техническая документация', 
+          items: [
+            { icon: '📄', title: 'Руководства', href: '/' },
+            { icon: '📚', title: 'API', href: '/' },
+          ] 
+        }
+      ] 
+    },
+    { 
+      title: 'Блоги', 
+      sections: [
+        { 
+          label: 'Статьи', 
+          items: [
+            { icon: '✍️', title: 'Технический блог', href: '/' },
+            { icon: '📰', title: 'Новости', href: '/' },
+          ] 
+        }
+      ] 
+    },
+    { 
+      title: 'Roadmap', 
+      sections: [
+        { 
+          label: 'Планы развития', 
+          items: [
+            { icon: '🗺️', title: 'График релизов', href: '/' },
+          ] 
+        }
+      ] 
+    },
+    { 
+      title: 'Контакты', 
+      sections: [
+        { 
+          label: 'Связь с нами', 
+          items: [
+            { icon: '📞', title: 'Телефоны', href: '/' },
+            { icon: '🏢', title: 'Офисы', href: '/' },
+          ] 
+        }
+      ] 
+    }
+  ]
+
   return (
-    <Accordion
-      type="single"
-      collapsible
-      className="w-[28vh] space-y-2 overflow-x-hidden"
-    >
-      {navItems.map((section, index) => (
+    <Accordion type="multiple" className="w-full">
+      {allSections.map((group, groupIndex) => (
         <AccordionItem 
-          key={index} 
-          value={`item-${index}`}
+          key={groupIndex} 
+          value={`group-${groupIndex}`}
           className="border-b border-gray-200 dark:border-gray-800"
         >
-          <AccordionTrigger className="py-3 text-left hover:no-underline w-full">
-            <button className="w-full text-left justify-start px-0 font-medium truncate">
-              {section.title}
-            </button>
+          <AccordionTrigger className="py-3 hover:no-underline">
+            <span className="font-medium">{group.title}</span>
           </AccordionTrigger>
           
-          <AccordionContent className="pb-3 pt-1 w-full">
-            <div className="flex flex-col gap-2 w-full">
-              {section.items.map((item, itemIndex) => (
-                <Link
-                  key={itemIndex}
-                  href={item.href}
-                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors w-full max-w-full overflow-hidden"
+          <AccordionContent className="pb-2">
+            <Accordion type="multiple" className="w-full">
+              {group.sections.map((section, sectionIndex) => (
+                <AccordionItem 
+                  key={sectionIndex} 
+                  value={`section-${groupIndex}-${sectionIndex}`}
+                  className="border-b border-gray-100 dark:border-gray-700"
                 >
-                  {item.icon && <span className="text-xl flex-shrink-0">{item.icon}</span>}
-                  <span className="font-medium break-words truncate">{item.title}</span>
-                </Link>
+                  <AccordionTrigger className="py-2 pl-4 hover:no-underline">
+                    <span className="font-medium">{section.label}</span>
+                  </AccordionTrigger>
+                  
+                  <AccordionContent className="pb-2 pl-6">
+                    <div className="flex flex-col gap-1">
+                      {section.items.map((item, itemIndex) => (
+                        <Link
+                          key={itemIndex}
+                          href={item.href}
+                          className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                        >
+                          {item.icon && <span className="text-xl">{item.icon}</span>}
+                          <span>{item.title}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-              
-              {section.allLink && (
-                <Link
-                  href={section.allLink.href}
-                  className="flex items-center gap-1 text-blue-500 hover:underline font-medium p-2 mt-1 break-words"
-                >
-                  {section.allLink.text} <span>↗</span>
-                </Link>
-              )}
-            </div>
+            </Accordion>
           </AccordionContent>
         </AccordionItem>
       ))}

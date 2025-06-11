@@ -1,0 +1,88 @@
+Date : 2025-06-11 17:09:14
+Directory : c:\Users\evgen\VScode\Work\gravitynode\src
+Total : 42 files,  2652 codes, 141 comments, 322 blanks, all 3115 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript JSX |         38 |      2,429 |        140 |        220 |      2,789 |
+| PostCSS        |          1 |        209 |          0 |        100 |        309 |
+| TypeScript     |          3 |         14 |          1 |          2 |         17 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                      | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                         |         42 |      2,652 |        141 |        322 |      3,115 |
+| app                                                                                       |          5 |        285 |          2 |        112 |        399 |
+| app (Files)                                                                               |          3 |        263 |          2 |        107 |        372 |
+| app\Registation                                                                           |          1 |         11 |          0 |          2 |         13 |
+| app\SignIn                                                                                |          1 |         11 |          0 |          3 |         14 |
+| shared                                                                                    |         20 |      1,483 |        105 |        153 |      1,741 |
+| shared\hooks                                                                              |          1 |         17 |          0 |          5 |         22 |
+| shared\lib                                                                                |          1 |          5 |          0 |          2 |          7 |
+| shared\ui                                                                                 |         18 |      1,461 |        105 |        146 |      1,712 |
+| shared\ui (Files)                                                                         |          9 |        571 |          4 |         74 |        649 |
+| shared\ui\magicui                                                                         |          9 |        890 |        101 |         72 |      1,063 |
+| widgets                                                                                   |         17 |        884 |         34 |         57 |        975 |
+| widgets\Auth                                                                              |          2 |        180 |          3 |         12 |        195 |
+| widgets\Blog                                                                              |          2 |         50 |          0 |          4 |         54 |
+| widgets\Footer                                                                            |          1 |          8 |          0 |          2 |         10 |
+| widgets\Header                                                                            |          6 |        487 |         14 |         25 |        526 |
+| widgets\Header (Files)                                                                    |          1 |         14 |          0 |          2 |         16 |
+| widgets\Header\ui                                                                         |          5 |        473 |         14 |         23 |        510 |
+| widgets\Hero                                                                              |          1 |         13 |          0 |          2 |         15 |
+| widgets\Panel                                                                             |          5 |        146 |         17 |         12 |        175 |
+| widgets\Panel\ui                                                                          |          5 |        146 |         17 |         12 |        175 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                  | language       | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\evgen\VScode\Work\gravitynode\src\app\Registation\page.tsx                       | TypeScript JSX |         11 |          0 |          2 |         13 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\app\SignIn\page.tsx                            | TypeScript JSX |         11 |          0 |          3 |         14 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\app\globals.css                                | PostCSS        |        209 |          0 |        100 |        309 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\app\layout.tsx                                 | TypeScript JSX |         42 |          2 |          5 |         49 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\app\page.tsx                                   | TypeScript JSX |         12 |          0 |          2 |         14 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\hooks\useScroolbar.tsx                  | TypeScript JSX |         17 |          0 |          5 |         22 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\lib\utils.ts                            | TypeScript     |          5 |          0 |          2 |          7 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\ModeToggle.tsx                       | TypeScript JSX |         37 |          0 |          1 |         38 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\accordion.tsx                        | TypeScript JSX |         50 |          0 |          8 |         58 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\button.tsx                           | TypeScript JSX |         52 |          0 |          6 |         58 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\card.tsx                             | TypeScript JSX |         68 |          0 |          9 |         77 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\dropdown-menu.tsx                    | TypeScript JSX |        183 |          0 |         19 |        202 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\input.tsx                            | TypeScript JSX |         19 |          0 |          4 |         23 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\label.tsx                            | TypeScript JSX |         21 |          0 |          6 |         27 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\interactive-grid-pattern.tsx | TypeScript JSX |         53 |         15 |          5 |         73 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\magic-card.tsx               | TypeScript JSX |         97 |          0 |         12 |        109 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\marquee.tsx                  | TypeScript JSX |         49 |         22 |          3 |         74 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\meteors.tsx                  | TypeScript JSX |         53 |          2 |          6 |         61 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\ripple-button.tsx            | TypeScript JSX |         82 |          0 |         10 |         92 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\ripple.tsx                   | TypeScript JSX |         74 |          3 |          7 |         84 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\shimmer-button.tsx           | TypeScript JSX |         78 |          8 |         11 |         97 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\shine-border.tsx             | TypeScript JSX |         40 |         17 |          5 |         62 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\magicui\text-animate.tsx             | TypeScript JSX |        364 |         34 |         13 |        411 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\sheet.tsx                            | TypeScript JSX |        132 |          4 |         18 |        154 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\shared\ui\theme-provider.tsx                   | TypeScript JSX |          9 |          0 |          3 |         12 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Auth\Registr.tsx                       | TypeScript JSX |        139 |          3 |         10 |        152 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Auth\sign-in.tsx                       | TypeScript JSX |         41 |          0 |          2 |         43 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Blog\Blog.tsx                          | TypeScript JSX |         46 |          0 |          4 |         50 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Blog\Blog.types.ts                     | TypeScript     |          4 |          0 |          0 |          4 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Footer\Footer.tsx                      | TypeScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\app-header.tsx                  | TypeScript JSX |         14 |          0 |          2 |         16 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\ui\auth.tsx                     | TypeScript JSX |         21 |          2 |          1 |         24 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\ui\layout.tsx                   | TypeScript JSX |         52 |          0 |          5 |         57 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\ui\logo-head.tsx                | TypeScript JSX |         17 |          0 |          2 |         19 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\ui\nav-desctop.tsx              | TypeScript JSX |        258 |         11 |          8 |        277 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Header\ui\nav-mobile.tsx               | TypeScript JSX |        125 |          1 |          7 |        133 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Hero\Hero.tsx                          | TypeScript JSX |         13 |          0 |          2 |         15 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Panel\ui\Panel-main.tsx                | TypeScript JSX |         15 |          0 |          2 |         17 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Panel\ui\Panel.types.ts                | TypeScript     |          5 |          1 |          0 |          6 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Panel\ui\Panel2xl.tsx                  | TypeScript JSX |         52 |          6 |          3 |         61 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Panel\ui\PanelMobile.tsx               | TypeScript JSX |         52 |          6 |          4 |         62 |
+| c:\Users\evgen\VScode\Work\gravitynode\src\widgets\Panel\ui\reviwes.tsx                   | TypeScript JSX |         22 |          4 |          3 |         29 |
+| Total                                                                                     |                |      2,652 |        141 |        322 |      3,115 |
++-------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

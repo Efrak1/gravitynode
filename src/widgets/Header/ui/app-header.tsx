@@ -1,8 +1,8 @@
 import React from 'react'
-import { Layout } from './ui/layout'
-import { LogoHead } from './ui/logo-head'
-import { Nav } from './ui/nav-desctop'
-import { Auth } from './ui/auth'
+import { Layout } from './layout'
+import { LogoHead } from './logo-head'
+import { Nav } from './nav-desctop'
+import { Auth } from './auth'
 
 export const AppHeader = () => {
     return (

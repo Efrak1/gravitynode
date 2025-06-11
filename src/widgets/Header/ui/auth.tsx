@@ -1,5 +1,5 @@
 "use client"
-import { RippleButton } from '@/shared/ui/magicui/ripple-button'
+// import { RippleButton } from '@/shared/ui/magicui/ripple-button'
 import { ShimmerButton } from '@/shared/ui/magicui/shimmer-button'
 // import { ModeToggle } from '@/shared/ui/ModeToggle'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ export const Auth = () => {
                 </Link>
                 {/* <ModeToggle /> */}
             </div>
-            <Link href='/'><RippleButton rippleColor="white" className='w-full xl:w-auto 2xl:text-xl 2xl:py-[30px] 2xl:px-8'>Связаться</RippleButton></Link>
+            {/* <Link href='/'><RippleButton rippleColor="white" className='w-full xl:w-auto 2xl:text-xl 2xl:py-[30px] 2xl:px-8'>Связаться</RippleButton></Link> */}
          </div>
     )
 }
