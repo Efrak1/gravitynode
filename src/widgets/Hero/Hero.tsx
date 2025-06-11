@@ -1,6 +1,6 @@
 'use client'
 import { TextAnimate } from '@/shared/ui/magicui/text-animate'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
 
 export const Hero = () => {

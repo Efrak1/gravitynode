@@ -8,17 +8,7 @@ import {
 import Link from "next/link"
 import { Service, Decisions } from './nav-const'
 
-type NavSection = {
-  label: string;
-  items: {
-    icon?: string;
-    title: string;
-    href: string;
-  }[];
-}
-
 export function NavMobile() {
-  // Собираем все разделы
   const allSections = [
     { title: 'Сервисы', sections: Service },
     { title: 'Решения', sections: Decisions },

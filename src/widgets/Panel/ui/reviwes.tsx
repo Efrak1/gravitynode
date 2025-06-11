@@ -1,3 +1,10 @@
+interface Reviews {
+    name: string;
+    username: string;
+    body: string;
+    // img: string;
+}  
+
 export const reviews: Reviews[] = [
   {
     name: "10+ продуктов",
