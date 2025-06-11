@@ -9,7 +9,7 @@ export const Auth = () => {
     return (
         <div className='flex flex-col xl:flex-row items-center justify-center gap-5'>
             <div className='flex flex-row justify-center items-center gap-5 w-full'>
-                <Link href='/Auth'>
+                <Link href='/SignIn'>
                     <ShimmerButton className="shadow-2xl w-full">
                         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                             Авторизация
