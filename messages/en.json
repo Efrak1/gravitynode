@@ -32,32 +32,112 @@
                 "p": "p"
             },
             "panel": {
-                "reviews": {
-                    "products": {
-                        "name": "10+ Products",
-                        "username": "------------",
-                        "body": "Plus a huge software marketplace on the server creation page."
-                    },
-                    "performance": {
-                        "name": "Everything Flies",
-                        "username": "-----------",
-                        "body": "Everything works so fast, as if you installed the panel on your computer."
-                    },
-                    "organization": {
-                        "name": "Project Sorting",
-                        "username": "--------",
-                        "body": "Distribute services by projects, teams or cities - whatever suits you."
-                    },
-                    "feedback": {
-                        "name": "Your Ideas Section",
-                        "username": "---------",
-                        "body": "Request what you're missing in our products. We consider all suggestions."
-                    }
+                "products": {
+                    "name": "10+ Products",
+                    "username": "------------",
+                    "body": "Plus a huge software marketplace on the server creation page."
+                },
+                "performance": {
+                    "name": "Everything Flies",
+                    "username": "-----------",
+                    "body": "Everything works so fast, as if you installed the panel on your computer."
+                },
+                "organization": {
+                    "name": "Project Sorting",
+                    "username": "--------",
+                    "body": "Distribute services by projects, teams or cities - whatever suits you."
+                },
+                "feedback": {
+                    "name": "Your Ideas Section",
+                    "username": "---------",
+                    "body": "Request what you're missing in our products. We consider all suggestions."
+                }
+            }
+        },
+        "ui": {
+            "layout": {
+                "header": {
+                    "Документация": "Documentation",
+                    "Блоги": "Blogs",
+                    "Roadmap": "Roadmap",
+                    "Контакты": "Contacts"
+                },
+                "footer": {
+                    "copyright": "© 2025 Gravity Node. All rights reserved."
+                },
+                "const": {
+                    "Инфраструктура": "Infrastructure",
+                    "Выделенные серверы": "Dedicated Servers",
+                    "Физические серверы: готовые и под запрос": "Physical Servers: Pre-configured and Custom",
+                    "Облачные серверы": "Cloud Servers",
+                    "Виртуальные машины с почасовым биллингом": "Virtual Machines with Hourly Billing",
+                    "Публичное облако VMware": "VMware Public Cloud",
+                    "Виртуальный ЦОД с управлением через vCloud Director": "Virtual Data Center Managed via vCloud Director",
+                    "Серверы с GPU": "GPU Servers",
+                    "Сервера с графическими ускорителями": "Servers with Graphics Accelerators",
+                    "VDS и VPS на Linux": "VDS and VPS on Linux",
+                    "Виртуальные серверы с готовыми дистрибутивами": "Virtual Servers with Pre-installed Distributions",
+                    "VDS и VPS с Ubuntu": "VDS and VPS with Ubuntu",
+                    "Виртуальные серверы с Ubuntu": "Virtual Servers with Ubuntu",
+                    "Сети": "Networking",
+                    "VPN": "VPN",
+                    "Безопасное соединение для бизнеса": "Secure Business Connection",
+                    "Балансировщики": "Load Balancers",
+                    "Распределение нагрузки": "Load Distribution",
+                    "Хранение и бэкапы": "Storage and Backups",
+                    "Облачное хранилище": "Cloud Storage",
+                    "Надёжное хранение данных": "Reliable Data Storage",
+                    "Бэкапы": "Backups",
+                    "Автоматическое резервное копирование": "Automated Backup",
+                    "Базы данных": "Databases",
+                    "Облачные базы данных": "Cloud Databases",
+                    "Базы данных как сервис": "Database as a Service",
+                    "PostgreSQL": "PostgreSQL",
+                    "Универсальная база данных для сложных вычислений": "Universal Database for Complex Computations",
+                    "MongoDB": "MongoDB",
+                    "Кроссплатформенная база данных для хранения документов": "Cross-platform Document Database",
+                    "MySQL": "MySQL",
+                    "Масштабируемая база данных с синхронной репликацией": "Scalable Database with Synchronous Replication",
+                    "Redis": "Redis",
+                    "In-memory база данных с открытым исходным кодом": "Open-source In-memory Database",
+                    "Kafka": "Kafka",
+                    "Брокер сообщений для распределенной доставки, хранения и обработки данных": "Message Broker for Distributed Data Delivery, Storage and Processing",
+                    "Контейнеры": "Containers",
+                    "Kubernetes": "Kubernetes",
+                    "Управляемые кластеры Kubernetes в облаке": "Managed Kubernetes Clusters in Cloud",
+                    "По типу задач": "By Task Type",
+                    "Серверы 152-ФЗ": "152-FZ Compliant Servers",
+                    "Соответствие требованиям закона": "Regulatory Compliance",
+                    "Облако 1С": "1C Cloud",
+                    "Облачные серверы для приложений 1С": "Cloud Servers for 1C Applications",
+                    "Корпоративная почта": "Corporate Email",
+                    "Почта для бизнеса на вашем домене": "Business Email on Your Domain",
+                    "DevOps as a Service": "DevOps as a Service",
+                    "Полноценное делегирование DevOps-процессов нам": "Full DevOps Process Delegation",
+                    "Выделенные серверы 1С": "Dedicated 1C Servers",
+                    "Частичный или полный перенос сервисов в облако": "Partial or Full Service Migration to Cloud",
+                    "Миграция в облако": "Cloud Migration",
+                    "Надежная инфраструктура для компаний любого масштаба": "Reliable Infrastructure for Businesses of Any Scale",
+                    "По отраслям": "By Industry",
+                    "Ритейл": "Retail",
+                    "Инфраструктура для офлайн-магазинов любого масштаба": "Infrastructure for Offline Stores of Any Size",
+                    "Финансы и страхование": "Finance and Insurance",
+                    "Инфраструктура для банковских, финансовых и страховых компаний": "Infrastructure for Banking, Financial and Insurance Companies",
+                    "Интеграторы": "Integrators",
+                    "Инфраструктура для системных интеграторов и поставщиков ИТ-услуг": "Infrastructure for System Integrators and IT Service Providers",
+                    "E-Commerce": "E-Commerce",
+                    "Инфраструктура для маркетплейсов и интернет-магазинов": "Infrastructure for Marketplaces and Online Stores",
+                    "Администрирование": "Administration",
+                    "Базовое администрирование": "Basic Administration",
+                    "Базовые задачи администрирования и круглосуточный мониторинг": "Basic Administration Tasks and 24/7 Monitoring",
+                    "Лицензии Microsoft": "Microsoft Licenses",
+                    "Серверные лицензии ПО": "Server Software Licenses",
+                    "Сервисы": "Services",
+                    "Решения": "Solutions",
+                    "Все сервисы": "All Services",
+                    "Все решения": "All Solutions"
                 }
             }
         }
-    },
-    "footer": {
-        "copyright": "© 2025 Gravity Node. All rights reserved."
     }
 }

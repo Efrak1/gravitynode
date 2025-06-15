@@ -4,13 +4,13 @@ import { reviews } from "./Reviews";
 import { ReviewCard } from "./ReviewCard";
 
 export function Panel2xl() {
-  const t = useTranslations('reviews');
+  const t = useTranslations('widgets.content.panel');
   
-  const translatedReviews = reviews.map(review => ({
-    ...review,
-    name: t(`${review.key}.name`),
-    username: t(`${review.key}.username`),
-    body: t(`${review.key}.body`)
+  const translatedReviews = reviews.map(panel => ({
+    ...panel,
+    name: t(`${panel.key}.name`),
+    username: t(`${panel.key}.username`),
+    body: t(`${panel.key}.body`)
   }));
 
   const firstRow = translatedReviews.slice(0, translatedReviews.length / 2);
@@ -19,22 +19,22 @@ export function Panel2xl() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s] transform: translateX(calc(-100% - var(--gap)));">
-        {firstRow.map((review, index) => (
+        {firstRow.map((panel, index) => (
           <ReviewCard 
             key={`first-${index}`} 
-            name={review.name}
-            username={review.username}
-            body={review.body}
+            name={panel.name}
+            username={panel.username}
+            body={panel.body}
           />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review, index) => (
+        {secondRow.map((panel, index) => (
           <ReviewCard 
             key={`second-${index}`} 
-            name={review.name}
-            username={review.username}
-            body={review.body}
+            name={panel.name}
+            username={panel.username}
+            body={panel.body}
           />
         ))}
       </Marquee>

@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/shared/ui/shadcn/theme-provider";
 import { AppHeader } from "@/widgets/ui/layouts/Header/ui/app-header";
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+// import { setRequestLocale } from 'next-intl/server';
 // import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 

@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import LocaleToggle from '@/shared/ui/Locale/LocaleToggle';
 
 export const Footer = () => {
-  const t = useTranslations('footer');
+  const t = useTranslations('widgets.ui.layout.footer');
   const allServiceItems = Service.flatMap(section => section.items);
 
   const allDecisionItems = Decisions.flatMap(section => section.items);
