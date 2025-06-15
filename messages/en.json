@@ -1,0 +1,63 @@
+{
+    "widgets": {
+        "content": {
+            "blog": {
+                "servers": {
+                    "title": "Servers",
+                    "text": "VPS, dedicated, self-host"
+                },
+                "automation": {
+                    "title": "Business Automation",
+                    "text": "CRM, ERP, Telegram bots, AI"
+                },
+                "gaming": {
+                    "title": "Gaming Solutions",
+                    "text": "Minecraft, KMS, licenses"
+                },
+                "storage": {
+                    "title": "Data Storage",
+                    "text": "storage, drive"
+                },
+                "databases": {
+                    "title": "Databases",
+                    "text": "Postgre, MySQL, Mondo DB"
+                },
+                "chatForge": {
+                    "title": "Chat Forge",
+                    "text": "storage, drive"
+                }
+            },
+            "hero": {
+                "heading": "We are building an infrastructure that works for you.",
+                "p": "p"
+            },
+            "panel": {
+                "reviews": {
+                    "products": {
+                        "name": "10+ Products",
+                        "username": "------------",
+                        "body": "Plus a huge software marketplace on the server creation page."
+                    },
+                    "performance": {
+                        "name": "Everything Flies",
+                        "username": "-----------",
+                        "body": "Everything works so fast, as if you installed the panel on your computer."
+                    },
+                    "organization": {
+                        "name": "Project Sorting",
+                        "username": "--------",
+                        "body": "Distribute services by projects, teams or cities - whatever suits you."
+                    },
+                    "feedback": {
+                        "name": "Your Ideas Section",
+                        "username": "---------",
+                        "body": "Request what you're missing in our products. We consider all suggestions."
+                    }
+                }
+            }
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 Gravity Node. All rights reserved."
+    }
+}
